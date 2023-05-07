@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FIGMENT Authenticator</title>
+    <link rel="stylesheet" href="static/css/style1.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+</head>
+
+<body style="background-color:black;">
+    <header class="header">
+        <a href="/" ><img src="static/img/logo2%20-%20Copy.png" alt="FIGMENT logo" class="logo" /></a>
+
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li><a class="navbar-link" href="scanner" target="_blank">Employee</a></li>
+                <li><a class="navbar-link" href="admin_login" target="_blank">Admin</a></li>
+                <li><a class="navbar-link" href="about" target="_blank">About Us</a></li>
+                <li><a class="navbar-link" href="contact" target="_blank">Contact</a></li>
+
+            </ul>
+        </nav>
+
+        <div class="mobile-navbar-btn">
+            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+    </header>
+    
+    
+    <section id="adminlogin">
+	<div class="admin_login_box">
+		<form autocomplete="off" id="admin_login_form" method="post" action="">
+            {% csrf_token %}
+			<h1 id="admin_login_heading">New Admin </h1>
+			<div class="admin_login_inputBox">
+				<input type="text" name="username" id="username" required>
+				<span>Admin Userame</span>
+				<i></i>
+			</div>
+			<div class="admin_login_inputBox">
+				<input type="email" name="email" id="email" required>
+				<span>E-mail</span>
+				<i></i>
+			</div>
+			<div class="admin_login_inputBox">
+				<input type="password" name="password1" id="password1" required>
+				<span>Admin Password</span>
+				<i></i>
+			</div>
+			<div class="admin_login_inputBox">
+				<input type="password"name="password2" id="password2" required>
+				<span>Confirm Password</span>
+				<i></i>
+			</div>
+		<br>
+		<br>
+			<input type="submit" value="Login">
+		</form>
+	</div>
+	</section>
+  
+
+<!--
+    <footer class="full-quote1 full-quote3">
+        <div class="footer inner flex">
+            <div class="footer-box footer1">
+                <img src="img/logo1.png" alt="logo1" class="logo1">
+
+                <p><span class="fa fa-phone contact"></span> +91 8077781884</p>
+                <p><span class="fa fa-envelope contact"></span> info@company.com</p>
+                <p><span class="fa fa-globe contact"></span> www.company.com</p>
+            </div>
+            <div class="footer-box footer2">
+                <h2>Useful Links</h2>
+                <p>jfv</p>
+                <p>sjbvlsjb</p>
+                <p>msfvbsjv</p>
+                <p>smdvs,nv </p>
+                <p>jfv</p>
+                <p>sjbvlsjb</p>
+                <p>msfvbsjv</p>
+                <p>lsjdbvlj</p>
+            </div>
+            <div class="footer-box footer3">
+                <h2>NewsLetter</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.Lorem Ipsum has been the industry's standard dummy Lorem Ipsum has been the industry's standard dummy text..</p>
+                <input type="text" placeholder="Enter your name" class="name">
+                <button class="btn">Submit</button>
+            </div>
+        </div>
+    </footer>
+-->
+
+    <section class="bg-dark">
+        <div class="footer-icon ">
+            <div class="copyright">
+                <p>Copyright &copy; 2023 FINGMENT Authenticator</p>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/bff96006b1.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+
+    
+    
